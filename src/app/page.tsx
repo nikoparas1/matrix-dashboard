@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-1 flex-col min-h-0 items-center text-center p-4 justify-evenly gap-4">
+    <main className="flex flex-1 flex-col min-h-0 items-center text-center p-4 justify-evenly gap-8">
       <div className="matrix-rain" />
       <section id="intro" className="container">
         <Badge
@@ -41,7 +41,7 @@ export default function HomePage() {
           <Button
             style={{ cursor: "pointer" }}
             size="lg"
-            className="text-lg px-8 py-6 bg-background/80 hover:bg-background/100 text-white matrix-border glow-text"
+            className="sm:text-md md:text-xl lg:text-2xl px-8 py-6 bg-background/80 hover:bg-background/100 text-white matrix-border glow-text"
             variant={undefined}
           >
             Interested? Fill out our survey to learn more!

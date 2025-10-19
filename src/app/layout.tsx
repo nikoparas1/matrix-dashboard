@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Matrix Dashboard",
-  description: "Express interest in the Matrix Platform",
+  description: "Find out more about the Matrix Platform!",
   icons: {
     icon: "/matrix_logo.png",
   },
