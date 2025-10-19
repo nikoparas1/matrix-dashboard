@@ -13,18 +13,18 @@ export default function HomePage() {
   return (
     <main className="flex flex-1 flex-col min-h-0 items-center text-center p-4 justify-evenly gap-8">
       <div className="matrix-rain" />
-      <section id="intro" className="container">
+      <section id="intro" className="flex flex-col items-center p-8 gap-4 ">
         <Badge
-          className="mb-6 bg-primary/10 text-primary border-primary/20"
+          className="bg-primary/10 text-primary border-primary/20"
           variant={undefined}
         >
           The Future of Coding Practice
         </Badge>
-        <div className="container">
-          <h1 className="text-3xl md:text-6xl font-bold mb-6 glow-text text-balance">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-3xl md:text-6xl font-bold glow-text text-balance">
             Welcome to the <span className="text-primary">MATRIX</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto text-pretty text-primary">
+          <p className="text-lg md:text-xl max-w-3xl mx-auto text-pretty text-primary">
             Enter a new dimension of coding practice. Matrix is an all-in-one
             interview prep tool with an immersive, AI-powered platform that
             adapts to your learning style.
@@ -32,7 +32,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="" className="container">
+      <section id="" className="flex flex-col items-center p-8 gap-4 ">
         <Link
           href="https://docs.google.com/forms/d/e/1FAIpQLScrkVf_x_YMy7qsmH59NTESpmmgYr5v7yQ_mHfSGSjecrl_JA/viewform?usp=sharing&ouid=102078347171548237339"
           target="blank"
@@ -50,8 +50,8 @@ export default function HomePage() {
         </Link>
       </section>
 
-      <section id="" className="container">
-        <div className="container">
+      <section id="" className="flex flex-col items-center p-8 gap-4 ">
+        <div className="">
           <h2 className="text-3xl md:text-4xl font-bold glow-text">
             Why Choose Matrix?
           </h2>
@@ -62,14 +62,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="features" className="container">
+      <section id="features" className="container ">
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
           <Card className="bg-card/50 backdrop-blur-sm matrix-border hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
             <CardHeader className="flex-1 flex flex-col items-center justify-center text-center">
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Brain className="h-6 w-6 text-primary" />
               </div>
-              <CardTitle className="text-primary mt-3 mb-2">
+              <CardTitle className="text-primary">
                 AI-Powered Learning
               </CardTitle>
               <CardDescription className={undefined}>
@@ -84,9 +84,7 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Zap className="h-6 w-6 text-primary" />
               </div>
-              <CardTitle className="text-primary mt-3 mb-2">
-                Real-time Feedback
-              </CardTitle>
+              <CardTitle className="text-primary">Real-time Feedback</CardTitle>
               <CardDescription className={undefined}>
                 Get instant feedback on your code quality, performance, and best
                 practices as you type.
@@ -99,9 +97,7 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Target className="h-6 w-6 text-primary" />
               </div>
-              <CardTitle className="text-primary mt-3 mb-2">
-                Lesson Plan
-              </CardTitle>
+              <CardTitle className="text-primary">Lesson Plan</CardTitle>
               <CardDescription className={undefined}>
                 Follow our custom exercises to learn all of the skills you need
                 to succeed in coding questions.
@@ -114,9 +110,7 @@ export default function HomePage() {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                 <Trophy className="h-6 w-6 text-primary" />
               </div>
-              <CardTitle className="text-primary mt-3 mb-2">
-                Interview Prep
-              </CardTitle>
+              <CardTitle className="text-primary">Interview Prep</CardTitle>
               <CardDescription className={undefined}>
                 Simulate real technical interviews with AI interviewers and get
                 detailed performance analytics.
